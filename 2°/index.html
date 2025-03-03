@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Presentante</h1>
+        <div class="form" id="miFormulario">
+            <form action="">
+                <label for="nombre">¿Cuál es tu nombre?</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="años">¿Cuántos años tienes?</label>
+                <input type="text" id="años" name="años">
+                <label for="lenguaje">¿Qué lenguaje de programación estás estudiando?</label>
+                <input type="text" id="lenguaje" name="lenguaje">
+                <button type="submit">Enviar datos</button>
+            </form>
+            <p id="informacion"></p>
+        </div>
+        <div class="oculto" id="oculto">
+            <h2>Información opcional</h2>
+            <div class="form" id="miFormulario2">
+                <form action="">
+                    <label for="pregunta" id="pregunta"></label>
+                    <input type="text" id="repuesta" name="repuesta">
+                    <button type="submit" id="enviarRepuesta">Enviar Respuesta</button>
+                </form>
+                <p id="informacion2"></p>
+            </div>
+        </div>
+    </div>
+    <script src="2°.js"></script>
+</body>
+
+</html>

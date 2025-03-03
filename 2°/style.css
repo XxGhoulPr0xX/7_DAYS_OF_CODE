@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente */
+    height: 100vh;
+    padding: 20px;
+    font-family: Arial, sans-serif; /* Añade una fuente por defecto */
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vh;
+    padding: 20px;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra para mejor visualización */
+}
+
+.oculto {
+    visibility: hidden;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Aumenta el tamaño de la fuente para mejor legibilidad */
+}
+
+.form input:focus {
+    border-color: #007BFF; /* Cambia el color del borde al enfocar */
+    outline: none; /* Elimina el contorno por defecto */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Añade un efecto de sombra al enfocar */
+}
+
+.form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Aumenta el tamaño de la fuente */
+    transition: background-color 0.3s ease; /* Añade una transición suave */
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
+
+/* Añade un estilo para los mensajes de error o éxito */
+.form .mensaje {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.form .mensaje.error {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.form .mensaje.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
